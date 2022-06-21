@@ -1,0 +1,127 @@
+﻿body {
+    font-size: 12px;
+    position: absolute;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: #66b3ff;
+    
+}
+
+@media (max-width: @screen-xs) {
+    body {
+        font-size: 10px;
+    }
+
+    .countscontainer {
+        top: 5px;
+        left: 5px;
+    }
+
+    .countstable > thead > tr > td,
+    .countstable > thead > tr > th {
+        font-size: x-large;
+        white-space: nowrap;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+@media (max-width: @screen-sm) {
+    body {
+        font-size: 11px;
+    }
+
+    .countscontainer {
+        top: 5px;
+        left: 5px;
+       
+    }
+
+    .countstable > thead > tr > td,
+    .countstable > thead > tr > th {
+        font-size: x-large;
+        white-space: nowrap;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+/* TV Screen */
+@media (min-width: 1800px) {
+    body {
+        font-size: 25px;
+    }
+
+    .countscontainer {
+        bottom: 60px;
+        left: 15px;
+        top: inherit;
+    }
+
+    .countstable > thead > tr > td,
+    .countstable > thead > tr > th {
+        font-size: 30px;
+        white-space: nowrap;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+.countscontainer {
+    background-color: white;
+    opacity: 0.75;
+    z-index: 1000;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+#map_div, svg, .svgMap-map-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+#startedtoday, #completedtoday, #activetoday, #totalrecentstarts {
+    font-size: 1.5em;
+    color: black;
+    text-align: center;
+}
+
+.countstable,
+.countstable > tbody > tr > td,
+.countstable > tbody > tr > th,
+.countstable > tfoot > tr > td,
+.countstable > tfoot > tr > th,
+.countstable > thead > tr > td,
+.countstable > thead > tr > th {
+    border: none;
+    vertical-align: middle;
+    font-size: 170%;
+    color: black;
+}
+
+    .countstable > tbody > tr > td,
+    .countstable > tbody > tr > th,
+    .countstable > tfoot > tr > td,
+    .countstable > tfoot > tr > th,
+    .countstable > thead > tr > td,
+    .countstable > thead > tr > th {
+        padding: 1px;
+    }
+
+img {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    width: 90px;
+    height: 90px;
+}
