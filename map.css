@@ -1,7 +1,8 @@
 ﻿body {
     font-size: 12px;
     position: absolute;
-    background-color: transparent;
+    background-image: url("space.jpg");
+    background-color: #cccccc;
     height: 100%;
     width: 100%;
     padding: 0;
@@ -15,54 +16,68 @@
 
 .container {
     height: 100%;
-    width: 100%;
-    background-color: #66b3ff;
+    width: 100%;  
     
 }
 
+
+
 @media (max-width: @screen-xs) {
     body {
-        font-size: 10px;
+        font-size: 20px;
     }
 
     .countscontainer {
-        top: 5px;
+        font-size: 50px;
+        bottom: 5px;
         left: 5px;
+        height: 100px;
+        width: 100px;
     }
 
     .countstable > thead > tr > td,
     .countstable > thead > tr > th {
-        font-size: x-large;
+        font-size: 50px;
         white-space: nowrap;
-        font-family: Arial, Helvetica, sans-serif;
+       
+    }
+    img {
+        height: 8px;
+        width: 8px;
     }
 }
 
 @media (max-width: @screen-sm) {
     body {
-        font-size: 11px;
+        font-size: 22px;
     }
 
     .countscontainer {
+        font-size:100px;
         top: 5px;
-        left: 5px;
-       
+        bottom: 5px;
     }
 
     .countstable > thead > tr > td,
     .countstable > thead > tr > th {
-        font-size: x-large;
+        font-size: 100px;
         white-space: nowrap;
-        font-family: Arial, Helvetica, sans-serif;
+       
+    }
+    img {
+        height: 15px;
+        width: 15px;
     }
 }
-/* TV Screen */
-@media (min-width: 1800px) {
+
+/* NEW */
+@media (min-width: 600px) {
     body {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .countscontainer {
+        font-size: 15px;
         bottom: 60px;
         left: 15px;
         top: inherit;
@@ -70,19 +85,115 @@
 
     .countstable > thead > tr > td,
     .countstable > thead > tr > th {
-        font-size: 30px;
+        font-size: 15px;
         white-space: nowrap;
-        font-family: Arial, Helvetica, sans-serif;
+       
+    }
+
+    img {
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: 0px;
+        right: 20px;
+    }
+}
+
+/* NEW
+*/
+@media (min-width: 1000px) {
+    body {
+        font-size: 22px;
+    }
+
+    .countscontainer {
+        font-size: 25px;
+        bottom: 60px;
+        left: 15px;
+        top: inherit;
+    }
+
+    .countstable > thead > tr > td,
+    .countstable > thead > tr > th {
+        font-size: 25px;
+        white-space: nowrap;
+       
+    }
+
+    img {
+        height: 80px;
+        width: 80px;
+        position: absolute;
+        top: 0px;
+        right: 20px;
+    }
+}
+/* NEW */
+@media (min-width: 1400px) {
+    body {
+        font-size: 22px;
+    }
+
+    .countscontainer {
+        font-size: 35px;
+        bottom: 60px;
+        left: 15px;
+        top: inherit;
+    }
+
+    .countstable > thead > tr > td,
+    .countstable > thead > tr > th {
+        font-size: 35px;
+        white-space: nowrap;
+        
+    }
+
+    img {
+        height: 95px;
+        width: 95px;
+        position: absolute;
+        top: 0px;
+        right: 20px;
+    }
+}
+
+
+/* TV Screen */
+@media (min-width: 1800px) {
+    body {
+        font-size: 22px;
+    }
+
+    .countscontainer {
+        font-size: 45px;
+        bottom: 60px;
+        left: 15px;
+        top: inherit;
+    }
+
+    .countstable > thead > tr > td,
+    .countstable > thead > tr > th {
+        font-size: 45px;
+        white-space: nowrap;
+        
+    }
+    img {
+        height: 115px;
+        width: 115px;
+        position: absolute;
+        top: 0px;
+        right: 20px;
     }
 }
 
 .countscontainer {
-    background-color: white;
-    opacity: 0.75;
+    background-color: #ffffff;
+    opacity: 0.80;
     z-index: 1000;
     position: fixed;
     bottom: 10px;
     left: 10px;
+    
 }
 
 #map_div, svg, .svgMap-map-wrapper {
@@ -91,7 +202,7 @@
 }
 
 #startedtoday, #completedtoday, #activetoday, #totalrecentstarts {
-    font-size: 1.5em;
+    
     color: black;
     text-align: center;
 }
@@ -105,7 +216,7 @@
 .countstable > thead > tr > th {
     border: none;
     vertical-align: middle;
-    font-size: 170%;
+    font-weight: bold;
     color: black;
 }
 
@@ -119,9 +230,13 @@
     }
 
 img {
+    max-width: 115px;
+    max-height: 115px;
     position: absolute;
     top: 0px;
     right: 20px;
-    width: 90px;
-    height: 90px;
+}
+legend{
+    height: 500px;
+    width: 500px;
 }
